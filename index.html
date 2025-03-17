@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project News API</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>NEWS APP</h2>
+    <label for="search">Suchbegriff</label>
+    <input type="text" id="search" placeholder="Suchbegriff">
+
+    <label for="language">Sprache</label>
+    <select id="language">
+      <option value="ar">Arabisch</option>
+      <option value="de">Deutsch</option>
+      <option value="en">Englisch</option>
+      <option value="es">Spanisch</option>
+      <option value="fr">Französisch</option>
+      <option value="tr">Türkisch</option>
+      <option value="pt">Portugiesisch</option>
+      <option value="ru">Russisch</option>
+      <option value="zh">Chinesisch</option>
+      <option value="he">Hebräisch</option>
+
+    </select>
+
+    <label for="sort">Sortieren nach</label>
+    <select id="sort">
+      <option>Relevanz</option>
+      <option>Popularität</option>
+      <option>Neueste zuerst</option>
+    </select>
+
+    <button id="searchBtn">Suchen</button>
+
+    <div id="news-container" class="news-container">
+
+    </div>
+  </div>
+
+  <script src="./src/main.ts" type="module"></script>
+</body>
+
+</html>
